@@ -1,1 +1,19 @@
-<p>book-list works!</p>
+<mat-grid-list cols="2">
+    <mat-grid-tile *ngFor="let course of books$ | async">
+        <mat-card >
+            <mat-card-header>
+                <mat-card-title>{{course.description}}</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image [src]="course.iconUrl">
+            <mat-card-content>
+                <p>{{course.longDescription}}</p>
+            </mat-card-content>
+            <mat-card-actions class="course-actions">
+                <button mat-button class="mat-raised-button mat-primary" [routerLink]="[course.url]"
+                    >
+                    VIEW
+                </button>
+            </mat-card-actions>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>
