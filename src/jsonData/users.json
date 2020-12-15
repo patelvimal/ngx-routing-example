@@ -1,0 +1,27 @@
+[
+    {
+        "id":1,
+        "firstName":"Sachin",
+        "lastName": "Tendulkar",
+        "avatarUrl":"assets/avatar.png"
+    },
+    {
+        "id":2,
+        "firstName":"Rahul",
+        "lastName": "Dravid",
+        "avatarUrl":"assets/avatar.png"
+    },
+    {
+        "id":3,
+        "firstName":"Sourav",
+        "lastName": "Ganguly",
+        "avatarUrl":"assets/avatar.png"
+    },
+    {
+        "id":4,
+        "firstName":"Yuvraj",
+        "lastName": "Singh",
+        "avatarUrl":"assets/avatar.png"
+    }
+    
+]

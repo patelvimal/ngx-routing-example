@@ -1,0 +1,11 @@
+<mat-card *ngIf="(user$ | async) as user">
+    <mat-card-header>
+        <mat-card-title>{{user.firstName}} {{user.lastName}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image [src]="user.avatarUrl">
+    <mat-card-actions class="course-actions">
+        <button mat-button class="mat-raised-button mat-primary" [routerLink]="['/users']">
+            Click to Go Back
+        </button>
+    </mat-card-actions>
+</mat-card>

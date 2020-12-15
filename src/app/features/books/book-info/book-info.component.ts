@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {
-    ActivatedRoute,
-    ActivatedRouteSnapshot,
-    Router,
+  ActivatedRoute
 } from '@angular/router';
 import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -16,13 +14,10 @@ import { Book } from '../model/book.model';
 export class BookInfoComponent implements OnInit {
     book$: Observable<Book>;
     constructor(public route: ActivatedRoute) {
-      this.book$ = of();
+        this.book$ = of();
     }
 
     ngOnInit(): void {
         this.book$ = this.route.data.pipe(map((data) => data['book']));
-        this.book$.subscribe(data=> {
-          console.log(data);
-        })
     }
 }
